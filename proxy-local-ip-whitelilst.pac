@@ -21,6 +21,7 @@ function FindProxyForURL(url, host) {
         if (!ip) return false;
         return (
             ip === "REDACTED"   ||  // Raspberry Pi
+            ip === "REDACTED" // Poundhouse Printer
         );
     }
 
