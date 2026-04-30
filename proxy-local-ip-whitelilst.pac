@@ -22,7 +22,8 @@ function FindProxyForURL(url, host) {
         return (
             ip === "REDACTED"   ||  // Raspberry Pi
             ip === "REDACTED" || // Poundhouse Printer
-            ip === "REDACTED" // Topsham CCTV
+            ip === "REDACTED" || // Topsham CCTV
+            ip === "REDACTED" // Ipplepen Printer
         );
     }
 
