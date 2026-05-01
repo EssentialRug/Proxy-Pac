@@ -21,12 +21,12 @@ function FindProxyForURL(url, host) {
         if (!ip) return false;
         return (
             // St Michael's
+            ip === "REDACTED" ||   // CCTV 1
+            ip === "REDACTED" ||   // CCTV 2
             ip === "REDACTED"   ||  // Raspberry Pi
             ip === "REDACTED" ||   // Poundhouse uniFLOW Printer
             ip === "REDACTED" ||   // Library uniFLOW Printer
             ip === "REDACTED" ||    // House Office Printer
-            ip === "10.55.67.39" ||    // Library Canon
-            ip === "10.130.16.192" ||  // Poundhouse Canon
             ip === "REDACTED" ||   // Reception Canon
 
             // Ipplepen            
@@ -38,29 +38,23 @@ function FindProxyForURL(url, host) {
             ip === "REDACTED" ||  // SEN Printer
             ip === "REDACTED" ||  // uniFLOW Right Printer
             ip === "REDACTED" || // uniFLOW Left Printer
-            ip === "10.130.191.30" ||  // Left Canon
 
             // Stoke
+            ip === "REDACTED" ||   // CCTV
             ip === "REDACTED" ||  // Staff Room uniFLOW Printer
-            ip === "10.100.37.104" ||  // Reception Canon
 
             // Topsham
             ip === "REDACTED" || // CCTV
             ip === "REDACTED" ||  // Office uniFLOW Printer
             ip === "REDACTED" || // KS2 uniFLOW Printer
-            ip === "10.130.103.117" ||  // Topsham KS2 Canon
 
             // St Mary's
             ip === "REDACTED" ||   // Staff Room uniFLOW Printer
-            ip === "10.143.32.116" ||  // Staff Room Canon
 
             // Marldon
+            ip === "REDACTED" || // CCTV
             ip === "REDACTED" ||  // Resources Room uniFLOW Printer
-            ip === "REDACTED" ||   // Office Printer
-            ip === "10.130.123.73" ||   // Resources Room Printer
-
-            // Doddi
-            ip === "10.151.87.147"     // Staff Room UniFLOW Printer
+            ip === "REDACTED"      // Office Printer
         );
     }
 
