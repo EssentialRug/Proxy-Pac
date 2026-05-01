@@ -6,24 +6,61 @@ function FindProxyForURL(url, host) {
     function isSchoolNetwork(ip) {
         if (!ip) return false;
         return (
-            isInNet(ip, "10.55.66.0",   "255.255.254.0") ||
-            isInNet(ip, "10.130.16.0",  "255.255.255.0") ||
-            isInNet(ip, "10.130.191.0", "255.255.255.0") ||
-            isInNet(ip, "10.130.123.0", "255.255.255.0") ||
-            isInNet(ip, "10.143.32.0",  "255.255.255.0") ||
-            isInNet(ip, "10.130.126.0", "255.255.255.0") ||
-            isInNet(ip, "10.100.37.0",  "255.255.255.0") ||
-            isInNet(ip, "10.130.103.0", "255.255.255.0")
+            isInNet(ip, "10.55.66.0",   "255.255.254.0") || // St Michael's
+            isInNet(ip, "10.130.16.0",  "255.255.255.0") || // St Michael's
+            isInNet(ip, "10.130.191.0", "255.255.255.0") || // St Catherine's
+            isInNet(ip, "10.130.123.0", "255.255.255.0") || // Marldon
+            isInNet(ip, "10.143.32.0",  "255.255.255.0") || // St Mary's
+            isInNet(ip, "10.130.126.0", "255.255.255.0") || // Ipplepen
+            isInNet(ip, "10.100.37.0",  "255.255.255.0") || // Stoke
+            isInNet(ip, "10.130.103.0", "255.255.255.0") // Topsham
         );
     }
 
     function isWhitelisted(ip) {
         if (!ip) return false;
         return (
+            // St Michael's
             ip === "REDACTED"   ||  // Raspberry Pi
-            ip === "REDACTED" || // Poundhouse Printer
-            ip === "REDACTED" || // Topsham CCTV
-            ip === "REDACTED" // Ipplepen Printer
+            ip === "REDACTED" ||   // Poundhouse uniFLOW Printer
+            ip === "REDACTED" ||   // Library uniFLOW Printer
+            ip === "REDACTED" ||    // House Office Printer
+            ip === "10.55.67.39" ||    // Library Canon
+            ip === "10.130.16.192" ||  // Poundhouse Canon
+            ip === "REDACTED" ||   // Reception Canon
+
+            // Ipplepen            
+            ip === "REDACTED" || // Reception uniFLOW Printer
+            ip === "REDACTED" || // Office uniFLOW Printer
+
+            // St Catherines
+            ip === "10.103.191.58" ||  // Reception Printer
+            ip === "REDACTED" ||  // SEN Printer
+            ip === "REDACTED" ||  // uniFLOW Right Printer
+            ip === "REDACTED" || // uniFLOW Left Printer
+            ip === "10.130.191.30" ||  // Left Canon
+
+            // Stoke
+            ip === "REDACTED" ||  // Staff Room uniFLOW Printer
+            ip === "10.100.37.104" ||  // Reception Canon
+
+            // Topsham
+            ip === "REDACTED" || // CCTV
+            ip === "REDACTED" ||  // Office uniFLOW Printer
+            ip === "REDACTED" || // KS2 uniFLOW Printer
+            ip === "10.130.103.117 ||  // Topsham KS2 Canon
+
+            // St Mary's
+            ip === "REDACTED" ||   // Staff Room uniFLOW Printer
+            ip === "10.143.32.116" ||  // Staff Room Canon
+
+            // Marldon
+            ip === "REDACTED" ||  // Resources Room uniFLOW Printer
+            ip === "REDACTED" ||   // Office Printer
+            ip === "10.130.123.73 ||   // Resources Room Printer
+
+            // Doddi
+            ip === "10.151.87.147"     // Staff Room UniFLOW Printer
         );
     }
 
