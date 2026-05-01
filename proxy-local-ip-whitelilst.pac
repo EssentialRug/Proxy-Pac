@@ -34,7 +34,7 @@ function FindProxyForURL(url, host) {
             ip === "REDACTED" || // Office uniFLOW Printer
 
             // St Catherines
-            ip === "10.103.191.58" ||  // Reception Printer
+            ip === "REDACTED" ||  // Reception Printer
             ip === "REDACTED" ||  // SEN Printer
             ip === "REDACTED" ||  // uniFLOW Right Printer
             ip === "REDACTED" || // uniFLOW Left Printer
