@@ -48,7 +48,7 @@ function FindProxyForURL(url, host) {
             ip === "REDACTED" || // CCTV
             ip === "REDACTED" ||  // Office uniFLOW Printer
             ip === "REDACTED" || // KS2 uniFLOW Printer
-            ip === "10.130.103.117 ||  // Topsham KS2 Canon
+            ip === "10.130.103.117" ||  // Topsham KS2 Canon
 
             // St Mary's
             ip === "REDACTED" ||   // Staff Room uniFLOW Printer
@@ -57,7 +57,7 @@ function FindProxyForURL(url, host) {
             // Marldon
             ip === "REDACTED" ||  // Resources Room uniFLOW Printer
             ip === "REDACTED" ||   // Office Printer
-            ip === "10.130.123.73 ||   // Resources Room Printer
+            ip === "10.130.123.73" ||   // Resources Room Printer
 
             // Doddi
             ip === "10.151.87.147"     // Staff Room UniFLOW Printer
