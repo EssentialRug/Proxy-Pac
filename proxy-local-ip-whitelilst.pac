@@ -29,7 +29,8 @@ function FindProxyForURL(url, host) {
             ip === "REDACTED" ||    // House Office Printer
             ip === "REDACTED" ||   // Reception Canon
 
-            // Ipplepen            
+            // Ipplepen
+            ip === "REDACTED" || // CCTV
             ip === "REDACTED" || // Reception uniFLOW Printer
             ip === "REDACTED" || // Office uniFLOW Printer
 
