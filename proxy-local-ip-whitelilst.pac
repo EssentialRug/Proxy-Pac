@@ -21,6 +21,7 @@ function FindProxyForURL(url, host) {
         if (!ip) return false;
         return (
             // St Michael's
+            ip === "REDACTED" ||   // unifi Cloud Key
             ip === "REDACTED" ||   // CCTV 1
             ip === "REDACTED" ||   // CCTV 2
             ip === "REDACTED"   ||  // Raspberry Pi
@@ -30,6 +31,7 @@ function FindProxyForURL(url, host) {
             ip === "REDACTED" ||   // Reception Canon
 
             // Ipplepen
+            ip === "REDACTED" ||  // unifi Cloud Key
             ip === "REDACTED" || // CCTV
             ip === "REDACTED" || // Reception uniFLOW Printer
             ip === "REDACTED" || // Office uniFLOW Printer
@@ -45,6 +47,7 @@ function FindProxyForURL(url, host) {
             ip === "REDACTED" ||  // Staff Room uniFLOW Printer
 
             // Topsham
+            ip === "REDACTED" || // unifi Cloud Key
             ip === "REDACTED" || // CCTV
             ip === "REDACTED" ||  // Office uniFLOW Printer
             ip === "REDACTED" || // KS2 uniFLOW Printer
